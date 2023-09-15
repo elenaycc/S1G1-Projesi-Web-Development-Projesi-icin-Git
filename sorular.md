@@ -11,35 +11,26 @@ Eğer aradığın soruların cevapları GitHub docs'ta yoksa, Google'lama beceri
 ## Sorular
 
 1. Git nedir?
- 
- Git, Açık Kaynak Dağıtılmış Sürüm Kontrol Sistemi'dir.
+ Git, Açık Kaynak Dağıtılmış Sürüm Kontrol Sistemi(Open Source Distributed Version Control System)'dir.
 
 2. Git ile GitHub arasında ne fark var?
- 
- Git bir versiyon kontrol sistemidir. GitHub ise bu versiyon kontrol sistemi ile kullandığımız projeleri depolayabildiğimiz bir portaldır.
+   GitHub, bulut tabanlı bir git barındırma hizmeti sunan kâr amaçlı bir şirkettir. GitHub'daki projelere standart git komut satırı arayüzü kullanılarak erişilebilir ve tüm standart git komutları bununla çalışır.
 
 3. Neden bir branch oluşturuyoruz?
-
-Branch ile üzerinde çalışılan kaynak kodun bir kopyasını oluşturarak geliştirmelerin orijinal koddan bağımsız olarak ilerlemesini sağlayabiliriz.
+   Branchler projelerimizin birer kopyasıdır. Branchler, projemizin o anki haline dokunmadan, aynı proje üzerinde birden fazla kişi farklı konularda yeni özellikler (feature) ekleyerek çalışmamızı sağlar. Böylece proje hızla geliştirilmeye devam edebilir.
 
 4. Pull Request'in amacı nedir?
-
-Pull request talebi, temelde branch'dan sorumlu kişiden kodunuzu eklemesini istemektir. Ayrıca o kişinin kodda tam olarak neyi değiştirdiğinizi görmesine de yardımcı olur.
+   Pull request talebi, temelde branch'dan sorumlu kişiden kodunuzu eklemesini istemektir. Ayrıca o kişinin kodda tam olarak neyi değiştirdiğinizi görmesine de yardımcı olur.
 
 5. Bir Branchten diğerine geçmek için kullandığın KOMUT nedir? Mesela `isim-soyisim` branch'inde çalıştığını hayal et ve main branch'ine geçmek istiyorsun, ne yaparsın?
+   git checkout.    git checkout main
 
-git checkout branch_adi  /  git checkout main 
-
-6. `git fetch`, `git merge` ve `git pull` arasındaki farklıarı açıklayınız. Bu konutlar ne yapar açıklayınız.
-
-'git merge' git branch tarafından oluşturulan bağımsız geliştirme satırlarını almanızı ve bunları tek bir branch'ta birleştirmenizi sağlar.
-'git pull',uzaktaki deponun değişikliklerini yerel depoya getir,der.
-'git fetch',yerel depomu uzaktaki deponun içeriğine güncelle, anlamına gelir.
+6. `git fetch`, `git merge` ve `git pull` arasındaki farkları açıklayınız. Bu konutlar ne yapar açıklayınız.
+    Git Fetch, değişiklikleri yerel depoya getirmeden uzak depoda mevcut değişiklikler olduğunu bildiren komuttur.Git         Git Pull ise uzak dizin değişikliklerinin kopyasını yerel depoya getirir.
+    Git Merge branchları birleştirir.
 
 7. Merge conflict nedir?
- 
- İki kişi aynı dosyayı ve aynı satırı değiştirirse ve git otomatik olarak merge edemezse bu durumda conflict yani çakışma olacaktır.
+ İki kişi aynı dosyayı ve aynı satırı değiştirirse ve git otomatik olarak merge edemezse bu durumda conflict yani çakışma olacaktır. 
 
 8. Merge conflict'i nasıl çözeriz?
-
-Çakışma yaşayan kişi gerekirse ekipteki diğer kişi ile beraber oturup çakışmayı çözdükten sonra merge işlemine devam etmelidir.
+ Bu durumda çakışma yaşayan kişi gerekirse ekipteki diğer kişi ile beraber oturup çakışmayı çözdükten sonra merge işlemine devam etmelidir.
